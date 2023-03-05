@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'home/submit'
   get 'home/support'
   get 'home/about'
+
+  mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Ruby 3.1.2
 
-Things you may want to cover:
+- PostgreSQL 14.5
 
-* Ruby version
+- Tailwind
 
-* System dependencies
+- pdfjs_viewer-rails gem for PDF reader
 
-* Configuration
+- PDF files must be registered in app/assets/config/manifest.js for pre-compilation
 
-* Database creation
+Getting started
 
-* Database initialization
+environments/development.rb config.assets.debug = true
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+bundle install rake assets:clean rake assets:precompile bin/dev
