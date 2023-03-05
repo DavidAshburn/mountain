@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get 'home/support'
   get 'home/about'
 
+  get 'artists/jzich'
+  get 'artists/gjg'
+
   mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
