@@ -1,6 +1,6 @@
 <div class="flex flex-col md:flex-row font-ebgaramond justify-between">
   <div class="flex">
-    <div id="nameplate" class="h-[100vh] min-w-[49vw] md:min-w-[20vw] border-[40px] border-black bg-gradient-to-b from-slate-400 to-gray-100 text-black flex flex-col items-center self-start justify-evenly text-[22vh] font-semibold leading-[0.8]">
+    <div id="nameplate" class="h-[100vh] min-w-[55vw] md:min-w-[20vw] border-[40px] border-black bg-gradient-to-b from-slate-400 to-gray-100 text-black flex flex-col items-center justify-evenly text-[22vh] font-semibold leading-[0.8]">
       <div class="border-b-2 border-black pb-6 w-[70%] text-center">
         L
       </div>
@@ -21,15 +21,15 @@
   </div>
   <div id="links" class="h-[100vh] min-w-[20vw] border-[40px] border-black flex justify-center gap-4 text-white text-2xl font-garamond">
     <div class="text-end text-slate-300 mt-[25%] font-bold">
-      <p>poetry</p>
-      <p>art</p>
-      <p>issues</p>
+      <p><%= link_to 'poetry', home_poetry_path %></p>
+      <p><%= link_to 'art', home_art_path %></p>
+      <p><%= link_to 'issues', home_issues_path %></p>
     </div>
     <div class="bg-gradient-to-b from-slate-400 to-gray-100 h-[80%] w-1 self-center"></div>
     <div class="text-start self-end mb-[25%] font-bold">
-      <p>submit</p>
-      <p>support</p>
-      <p>about</p>
+      <p><%= link_to 'submit', home_submit_path %></p>
+      <p><%= link_to 'support', home_support_path %></p>
+      <p><%= link_to 'about', home_about_path %></p>
     </div>
   </div>
   <div id="credits" class="h-[30vh] md:h-[100vh] min-w-[20vw] border-[40px] border-black flex justify-end items-center gap-4 text-white text-lg font-garamond">
