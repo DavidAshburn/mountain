@@ -1,6 +1,6 @@
-<div class="flex flex-col md:flex-row font-ebgaramond justify-between">
-  <div class="flex">
-    <div id="nameplate" class="h-[100vh] min-w-[55vw] md:min-w-[20vw] border-[40px] border-black bg-gradient-to-b from-slate-400 to-gray-100 text-black flex flex-col items-center justify-evenly text-[22vh] font-semibold leading-[0.8]">
+<div class="flex flex-col md:flex-row font-ebgaramond justify-between cursor-default">
+  <div class="flex ">
+    <div class="h-[100vh] min-w-[55vw] md:min-w-[20vw] border-[40px] border-black bg-gradient-to-b from-slate-400 to-gray-100 text-black flex flex-col items-center justify-evenly text-[22vh] font-semibold leading-[0.8]">
       <div class="border-b-2 border-black pb-6 w-[70%] text-center">
         L
       </div>
@@ -13,36 +13,36 @@
       <div>
         S
       </div>
-      <div class="text-base md:text-lg font-normal italic md:tracking-widest -mb-2">
+      <div class="text-base md:text-lg font-normal italic md:tracking-widest -mb-2 font-garamond">
         the nature of things
       </div>
     </div>
-    <%= image_tag 'name.png', class:"w-[10vh] h-[90vh] -ml-10 mt-10 rotate-180" %>
+    <%= image_tag 'name.png', class:"w-[10vh] h-[90vh] -ml-10 mt-10 rotate-180", alt:"lone mountain literary society" %>
   </div>
-  <div id="links" class="h-[100vh] min-w-[20vw] border-[40px] border-black flex justify-center gap-4 text-white text-2xl font-garamond">
-    <div class="text-end text-slate-300 mt-[25%] font-bold">
-      <p><%= link_to 'poetry', home_poetry_path %></p>
-      <p><%= link_to 'art', home_art_path %></p>
-      <p><%= link_to 'issues', home_issues_path %></p>
-    </div>
+  <div aria-label="page links" class="h-[100vh] min-w-[20vw] border-[40px] border-black flex justify-center gap-4 text-white text-xl font-garamond">
+    <ul class="text-end text-slate-300 mt-[25%] font-bold">
+      <li><%= link_to 'poetry', home_poetry_path, class:"cursor-default" %></li>
+      <li><%= link_to 'art', home_art_path, class:"cursor-default" %></li>
+      <li><%= link_to 'issues', home_issues_path, class:"cursor-default" %></li>
+    </ul>
     <div class="bg-gradient-to-b from-slate-400 to-gray-100 h-[80%] w-1 self-center"></div>
-    <div class="text-start self-end mb-[25%] font-bold">
-      <p><%= link_to 'submit', home_submit_path %></p>
-      <p><%= link_to 'support', home_support_path %></p>
-      <p><%= link_to 'about', home_about_path %></p>
-    </div>
+    <ul class="text-start self-end mb-[25%] font-bold">
+      <li><%= link_to 'submit', home_submit_path, class:"cursor-default" %></li>
+      <li><%= link_to 'support', home_support_path, class:"cursor-default" %></li>
+      <li><%= link_to 'about', home_about_path, class:"cursor-default" %></li>
+    </ul>
   </div>
-  <div id="credits" class="h-[30vh] md:h-[100vh] min-w-[20vw] border-[40px] border-black flex justify-end items-center gap-4 text-white text-lg font-garamond">
-    <div class="text-end text-slate-300 font-bold text-xl">
-      <p>editor</p>
-      <p>fiction</p>
-      <p>art</p>
-    </div>
+  <div class="h-[30vh] md:h-[100vh] min-w-[20vw] border-[40px] border-black flex justify-end items-center gap-4 text-white text-lg font-garamond ">
+    <ul class="text-end text-slate-300 font-bold text-xl">
+      <li>editor</li>
+      <li>fiction</li>
+      <li>art</li>
+    </ul>
     <div class="bg-gradient-to-b from-slate-400 to-gray-100 h-[45%] w-1"></div>
-    <div class="text-start">
-      <p>m h lopez</p>
-      <p>gregg holliday</p>
-      <p>buck ashburn</p>
-    </div>
+    <ul class="text-start">
+      <li>m h lopez</li>
+      <li>gregg holliday</li>
+      <li>buck ashburn</li>
+    </ul>
   </div>
 </div>
