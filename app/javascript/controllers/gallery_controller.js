@@ -12,7 +12,6 @@ export default class extends Controller {
     this.pictures = this.pictureframeTarget.children;
     this.titles = this.titlesTarget.innerText.split(',');
     this.titleplateTarget.innerText = this.titles[0];
-    console.log(this.titles);
   }
 
   next() {

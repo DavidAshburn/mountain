@@ -1,7 +1,7 @@
 
 <div class="flex" data-controller="gallery">
 	<div class="flex flex-col w-[90vw]">
-		<div class="h-[10vh] bg-black"></div>
+		<div class="h-[5vh] bg-black"></div>
 		<div class="h-[80vh] bg-gray-700 flex items-center justify-center p-4 rounded-r-lg" data-gallery-target="pictureframe">
 			<%= image_tag 'art/yourvenus.jpg', class:"h-full transition-all" %>
 			<%= image_tag 'art/resurrection.jpg', class:"h-full hidden transition-all" %>
@@ -14,7 +14,7 @@
 			<button class="btn bg-black text-white" data-action="gallery#next">Next</button>
 		</div>
 	</div>
-	<div class="flex justify-center w-[10vw] bg-black items-center">
+	<div class="flex justify-center w-[10vw] bg-black">
 		<%= image_tag 'artists/gjgill.png', class:"h-[100vh] w-[10vh]" %>
 	</div>
 </div>
