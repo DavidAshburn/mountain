@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get 'artists/jzich'
   get 'artists/gjg'
 
+  get 'poets/bgreen'
+
   mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

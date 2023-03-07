@@ -1,9 +1,17 @@
 <div class="flex">
 
-	<%= image_tag 'poetryplate.png' %>
-	<div class="h-[100vh] w-[100vw] flex flex-col text-white font-ebgaramond gap-12 p-20 pr-0">
+	<%= image_tag 'util/poetryplate.png' %>
+	<div class="w-[100vw] h-[100vh] flex flex-col font-playfair text-white gap-12 pt-20 md:p-20 pr-0">
 
 		<div class="bg-gradient-to-r from-slate-400 to-gray-50 w-full h-1"></div>
+
+		<%= link_to poets_bgreen_path do %>
+			<div class="flex gap-4">
+				<p class="flex items-center justify-end w-20 md:w-40 text-slate-300">benjamin</p>
+				<div class="bg-gradient-to-b from-slate-400 to-gray-50 w-1 h-12"></div>
+				<p class="flex items-center font-black">GREEN</p>
+			</div>
+		<% end %>
 
 	</div>
 </div>
