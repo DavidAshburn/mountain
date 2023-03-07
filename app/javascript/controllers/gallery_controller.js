@@ -3,27 +3,31 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
 
   static targets = [
-    "pictureframe"
+    "pictureframe",
+    "titles",
+    "titleplate"
   ]
 
   connect() {
     this.pictures = this.pictureframeTarget.children;
-
-    console.log(this.pictures);
+    this.titles = this.titlesTarget.innerText.split(',');
+    this.titleplateTarget.innerText = this.titles[0];
+    console.log(this.titles);
   }
 
   next() {
     for(let pic = 0; pic < this.pictures.length; pic++) {
       if(!this.pictures[pic].classList.contains('hidden')) {
         if(pic < this.pictures.length - 1) {
-          this.pictures[pic].classList.add("hidden");
-          this.pictures[pic+1].classList.remove("hidden");
-          return;
+          var next = pic + 1;
+          
         } else {
-          this.pictures[pic].classList.add("hidden");
-          this.pictures[0].classList.remove("hidden");
-          return;
+          var next = 0;
         }
+        this.pictures[pic].classList.add("hidden");
+        this.pictures[next].classList.remove("hidden");
+        this.titleplateTarget.innerText = this.titles[next];
+        return;
       }
     }
   }

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  .btn-blue {
-    @apply py-2 px-4 min-w-fit text-center bg-gradient-to-t from-sky-400 hover:from-sky-500 via-cyan-200 hover:via-cyan-300 to-teal-100 hover:to-teal-200 rounded-full text-gray-700 focus:text-white focus:border-2 focus:border-white shadow-[inset_0_-2px_4px_rgba(220,220,255,0.2)];
+  .btn {
+    @apply py-2 px-4 min-w-fit h-fit text-center rounded-lg focus:text-white border border-white shadow-[inset_0_-2px_4px_rgba(220,220,255,0.2)];
   }
 }
