@@ -8,14 +8,18 @@
   }
 
   .poemtitle {
-    @apply text-gray-800 font-garamond font-semibold text-4xl md:text-7xl mb-4 md:mb-10 p-4 border-b-4 border-gray-900 rounded-l-[40px] text-end;
+    @apply text-gray-800 font-garamond font-semibold text-5xl md:text-7xl mb-4 md:mb-10 p-4 border-b-4 border-gray-900 text-end;
   }
 
   .poembox {
-    @apply bg-gray-300 flex flex-col justify-start pt-[3vh] pl-[10%] rounded-r-lg font-garamond text-xl;
+    @apply bg-gray-300 flex flex-col justify-start pt-[3vh] pl-[10%] rounded-r-lg rounded-l-[40px] md:rounded-l-[160px] font-garamond text-xl;
   }
 
   .poembody {
-    @apply border-l-8 border-t-2 border-white rounded-tl-[40px] rounded-br-lg bg-gradient-to-br from-white via-gray-100 to-gray-300 pl-8 py-8;
+    @apply text-lg md:text-xl font-medium border-l-8 border-t-2 border-white rounded-tl-[40px] rounded-br-lg bg-gradient-to-br from-white via-gray-100 to-gray-300 pl-2 md:pl-8 py-8;
+  }
+
+  .poetname {
+    @apply flex justify-center w-0 md:w-[100px] bg-black invisible md:visible;
   }
 }

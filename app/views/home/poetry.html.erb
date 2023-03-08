@@ -1,9 +1,9 @@
 <div class="flex">
 
 	<%= image_tag 'util/poetryplate.png' %>
-	<div class="w-[100vw] h-[100vh] flex flex-col font-inter text-white gap-8 pt-20 md:p-20 pr-0">
+	<div class="w-[100vw] h-[100vh] flex flex-col font-inter text-white gap-8 p-4 md:p-20 pr-0">
 
-		<div class="bg-gradient-to-r from-slate-400 to-gray-50 w-full h-1"></div>
+		<div class="bg-gradient-to-r from-slate-400 to-gray-100 h-12 w-full self-center"></div>
 
 		<%= link_to poets_bgreen_path do %>
 			<div class="flex gap-2">
@@ -42,6 +42,38 @@
 				<p class="flex items-center justify-end text-end w-20 md:w-40 text-slate-300">william rieppe</p>
 				<div class="bg-gradient-to-b from-slate-400 to-gray-50 w-1 h-12"></div>
 				<p class="flex items-center font-black">MOORE</p>
+			</div>
+		<% end %>
+
+		<%= link_to poets_lbridges_path do %>
+			<div class="flex gap-2">
+				<p class="flex items-center justify-end text-end w-20 md:w-40 text-slate-300">lawrence</p>
+				<div class="bg-gradient-to-b from-slate-400 to-gray-50 w-1 h-12"></div>
+				<p class="flex items-center font-black">BRIDGES</p>
+			</div>
+		<% end %>
+
+		<%= link_to poets_dradavich_path do %>
+			<div class="flex gap-2">
+				<p class="flex items-center justify-end text-end w-20 md:w-40 text-slate-300">david</p>
+				<div class="bg-gradient-to-b from-slate-400 to-gray-50 w-1 h-12"></div>
+				<p class="flex items-center font-black">RADAVICH</p>
+			</div>
+		<% end %>
+
+		<%= link_to poets_kljohnston_path do %>
+			<div class="flex gap-2">
+				<p class="flex items-center justify-end text-end w-20 md:w-40 text-slate-300">k.l.</p>
+				<div class="bg-gradient-to-b from-slate-400 to-gray-50 w-1 h-12"></div>
+				<p class="flex items-center font-black">JOHNSTON</p>
+			</div>
+		<% end %>
+
+		<%= link_to poets_thbodine_path do %>
+			<div class="flex gap-2">
+				<p class="flex items-center justify-end text-end w-20 md:w-40 text-slate-300">terry hall</p>
+				<div class="bg-gradient-to-b from-slate-400 to-gray-50 w-1 h-12"></div>
+				<p class="flex items-center font-black">BODINE</p>
 			</div>
 		<% end %>
 
