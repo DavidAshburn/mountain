@@ -24,6 +24,6 @@
   }
 
   .artbox {
-    @apply h-[80vh] bg-gray-300 flex items-center justify-center p-[3vh] rounded-r-lg rounded-l-[40px] md:rounded-l-[160px];
+    @apply h-[80vh] bg-gray-100 flex items-center justify-end p-[1vh] rounded-r-lg rounded-l-[20px] md:rounded-l-[160px];
   }
 }
