@@ -6,4 +6,16 @@
   .btn {
     @apply py-2 px-4 min-w-fit h-fit text-center rounded-lg focus:text-white border border-white shadow-[inset_0_-2px_4px_rgba(220,220,255,0.2)];
   }
+
+  .poemtitle {
+    @apply text-gray-800 font-garamond font-semibold text-4xl md:text-7xl mb-4 md:mb-10 p-4 border-b-4 border-gray-900 rounded-l-[40px] text-end;
+  }
+
+  .poembox {
+    @apply bg-gray-300 flex flex-col justify-start pt-[3vh] pl-[10%] rounded-r-lg font-garamond text-xl;
+  }
+
+  .poembody {
+    @apply border-l-8 border-t-2 border-white rounded-tl-[40px] rounded-br-lg bg-gradient-to-br from-white via-gray-100 to-gray-300 pl-8 py-8;
+  }
 }
