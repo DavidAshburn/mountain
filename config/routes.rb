@@ -20,6 +20,15 @@ Rails.application.routes.draw do
   get 'poets/dradavich'
   get 'poets/kljohnston'
   get 'poets/thbodine'
+  get 'poets/tthomson'
+  get 'poets/erosier'
+  get 'poets/jmwarnecke'
+  get 'poets/zschild'
+  get 'poets/hjalal'
+  get 'poets/ackramer'
+  get 'poets/jschmid'
+  get 'poets/lvoivodeship'
+  get 'poets/scotto'
 
   mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
