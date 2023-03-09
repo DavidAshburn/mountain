@@ -16,7 +16,7 @@
   }
 
   .poembody {
-    @apply text-lg md:text-xl font-medium border-l-8 border-t-2 border-white rounded-tl-[40px] rounded-br-lg bg-gradient-to-br from-white via-gray-100 to-gray-300 pl-2 md:pl-8 py-8;
+    @apply text-xl md:text-2xl font-medium border-l-8 border-t-2 border-white rounded-tl-[40px] rounded-br-lg bg-gradient-to-br from-white via-gray-100 to-gray-300 pl-2 md:pl-8 py-8;
   }
 
   .poetname {
