@@ -12,11 +12,11 @@
   }
 
   .poembox {
-    @apply bg-gray-300 flex flex-col justify-start pt-[3vh] pl-[10%] rounded-r-lg rounded-l-[40px] md:rounded-l-[160px] font-garamond text-xl;
+    @apply bg-gray-300 flex flex-col justify-start pt-[3vh] pl-[10%] rounded-r-lg rounded-l-[40px] font-ebgaramond text-xl;
   }
 
   .poembody {
-    @apply text-xl md:text-2xl font-medium border-l-8 border-t-2 border-white rounded-tl-[40px] rounded-br-lg bg-gradient-to-br from-white via-gray-100 to-gray-300 pl-2 md:pl-8 py-8;
+    @apply text-xl md:text-2xl font-medium border-l-8 border-t-2 border-white rounded-tl-[40px] rounded-br-lg bg-gradient-to-br from-white via-gray-100 to-gray-300 pl-2 md:pl-8 py-12;
   }
 
   .poetname {
@@ -27,3 +27,4 @@
     @apply h-[80vh] bg-gray-100 flex items-center justify-end p-[1vh] rounded-r-lg rounded-l-[20px] md:rounded-l-[160px];
   }
 }
+
