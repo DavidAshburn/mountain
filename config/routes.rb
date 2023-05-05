@@ -30,7 +30,6 @@ Rails.application.routes.draw do
   get 'poets/lvoivodeship'
   get 'poets/scotto'
 
-  mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
