@@ -1,38 +1,23 @@
 class PoetsController < ApplicationController
-  def bgreen
+  before_action :set_poet, only: %i[ show ]
+
+  # GET /poets or /poets.json
+  def index
+    @poets = Poet.all
   end
-  def ldelan
+
+  # GET /poets/1 or /poets/1.json
+  def show
   end
-  def ewij
-  end
-  def mbrooks
-  end
-  def wrmoore
-  end
-  def lbridges
-  end
-  def dradavich
-  end
-  def kljohnston
-  end
-  def thbodine
-  end
-  def tthomson
-  end
-  def erosier
-  end
-  def jmwarnecke
-  end
-  def zschilde
-  end
-  def hjalal
-  end
-  def ackramer
-  end
-  def jschmid
-  end
-  def lvoivodeship
-  end
-  def scotto
-  end
+
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_poet
+      @poet = Poet.find(params[:id])
+    end
+
+    # Only allow a list of trusted parameters through.
+    def poet_params
+      params.require(:poet).permit(:first, :last, :bio, :nameplate)
+    end
 end

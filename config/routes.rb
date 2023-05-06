@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :artists
+  resources :poets
+  
   root 'home#index'
   get 'home/fonts'
   get 'home/poetry'
