@@ -11,7 +11,7 @@ export default class extends Controller {
   connect() {
     this.pictures = this.pictureframeTarget.children;
     this.titles = this.titlesTarget.innerText.split(',');
-    this.titleplateTarget.innerText = this.titles[0];
+    this.titleplateTarget.innerText = this.titles[0].trim();
   }
 
   next() {
@@ -25,7 +25,7 @@ export default class extends Controller {
         }
         this.pictures[pic].classList.add("hidden");
         this.pictures[next].classList.remove("hidden");
-        this.titleplateTarget.innerText = this.titles[next];
+        this.titleplateTarget.innerText = this.titles[next].trim();
         return;
       }
     }
