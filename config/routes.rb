@@ -1,13 +1,34 @@
 Rails.application.routes.draw do
-  resources :artists
-  resources :poets
-  
   root 'home#index'
   get 'home/fonts'
   get 'home/poetry'
   get 'home/art'
   get 'home/issues'
+  get 'home/submit'
+  get 'home/support'
   get 'home/about'
+
+  get 'artists/jzich'
+  get 'artists/gjg'
+
+  get 'poets/bgreen'
+  get 'poets/ldelan'
+  get 'poets/ewij'
+  get 'poets/mbrooks'
+  get 'poets/wrmoore'
+  get 'poets/lbridges'
+  get 'poets/dradavich'
+  get 'poets/kljohnston'
+  get 'poets/thbodine'
+  get 'poets/tthomson'
+  get 'poets/erosier'
+  get 'poets/jmwarnecke'
+  get 'poets/zschild'
+  get 'poets/hjalal'
+  get 'poets/ackramer'
+  get 'poets/jschmid'
+  get 'poets/lvoivodeship'
+  get 'poets/scotto'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
