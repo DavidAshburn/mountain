@@ -17,16 +17,8 @@
   </head>
 
   <body class="bg-black">
-    <% if controller_name == 'poets' %>
-      <%= link_to home_poetry_path do %>
-        <div class="w-full font-ebgaramond text-white text-3xl text-end pr-[200px] py-2">
-          back to poets
-        </div>
-      <% end %>
-    <% end %>
     <main>
       <%= yield %>
     </main>
   </body>
 </html>
-
