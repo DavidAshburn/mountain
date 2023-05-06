@@ -119,7 +119,7 @@ ewi = Poet.create(
 	first: "e.w.i.",
 	last: "johnson",
 	bio: "none",
-	nameplate: "artists/ewijohson.png"
+	nameplate: "artists/ewij.png"
 	)
 
 ewi.poems.create( :title => 'Resurrection', :body => '
