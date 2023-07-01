@@ -966,7 +966,7 @@ laura.poems.create( :title => 'The End', :body => '
 	<p class="ml-4 mb-4">scour my shadow</p>
 	<p class="ml-4">on yours again.</p>
 	<p>I will open my mouth</p>
-	<p class="text-sm">-- WIDE --</p>
+	<p class="py-1">-- WIDE --</p>
 	<p class="mb-4">I will tauten. I will nail</p>
 	<p class="ml-4">a web of spurs</p>
 	<p class="ml-4">above my catechism</p>
@@ -986,7 +986,7 @@ laura.poems.create( :title => 'The End', :body => '
 	<p class="ml-4">love song.
 
 	<p>For the sake of my armouries:</p>
-	<p class="ml-4 text-sm">THIS IS THE END.</p>
+	<p class="ml-4 py-1">THIS IS THE END.</p>
 	<p><span class="line-through">I will die now, love</span>. Do not torment me.</p>
 	<p class="mb-4"><span class="line-through">I will die</span>. I\'ll have an untroubled expression</p>
 
@@ -1035,6 +1035,100 @@ scotto.poems.create( :title => 'Four Haikus', :body => '
 	<p>Explained to me wordlessly</p>
 	<p>Language of the winds</p>
 	')
+
+doug = Poet.create(
+	first: 'douglas',
+	last: 'colston',
+	bio: 'none',
+	nameplate: 'artists/dcolston.png'
+)
+
+doug.poems.create( :title=> 'The Eternal Return', :body => '
+	<p>`The end of the world begins</p>
+	<p>at the end of each moment</p>
+	<p>and it is renewed again</p>
+	<p>in the rebirth</p>
+	<p>of the moment</p>
+	<p class="mb-8">that follows.</p>
+
+	<p>Some people believe</p>
+	<p>Nietzche may have referred to it</p>
+	<p>as the `Eternal Return`</p>
+	<p>but the German</p>
+	<p>term he used was <span class="italic">Ewige Wiederkunft</span></p>
+	<p>which can be interpreted in various ways -</p>
+	<p class="mb-8">including `the everlasting prophesized return of Jesus Christ`.</p>
+
+	<p>That is not what people expect</p>
+	<p class="mb-8">from Nietzche</p>
+
+	<p>Perhaps Nietzche used "<span class="italic">Ewige Wiederkunft</span>"</p>
+	<p class="mb-8">to describe `the constantly recurring future`.</p>
+
+	<p>If so,</p>
+	<p>it could be a description</p>
+	<p>he applied to the concept</p>
+	<p>after deciphering</p>
+	<p>some ancient texts</p>
+	<p class="italic">on the subject.</p>
+
+	<p>Such speculation aside,</p>
+	<p>the future</p>
+	<p>is something</p>
+	<p>we will all encounter</p>
+	<p>as the present -</p>
+	<p>and then the past -</p>
+	<p>until we achieve <span class="italic">nirvana</span>,</p>
+	<p>which is assured ...</p>
+	<p class="mb-8">because it (<span class="italic">nirvana</span>) is `death`.</p>
+
+	<p>Feel free</p>
+	<p>to use a quality dictionary</p>
+	<p>to check the meanings</p>
+	<p class="mb-8">of <span class="italic">Ewige, Wiederkunft</span> and <span class="italic">nirvana</span>.</p>
+
+	<p>They (dictionaries)</p>
+	<p>can be helpful tools</p>
+	<p>for dispelling misconceptions</p>
+	<p>about the meanings of philosophical and metaphysical concepts ...</p>
+	<p class="mb-8">when used by a wise mind.</p>
+	')
+
+jack = Poet.create(
+	first: 'jack',
+	last: 'galati',
+	bio: 'none',
+	nameplate: 'artists/jgalati.png'
+)
+
+jack.poems.create(
+	:title => 'I\'ve caught myself again', :body => '
+	<p>Constance</p>
+	<p>Your name is the flow of blood</p>
+	<p>to my head.</p>
+	<p class="mb-8">I am quite purple in the setting sun.</p>
+
+	<p>I hope when you read this</p>
+	<p>you think of classical guitars</p>
+	<p>like the ones on that slow summer day</p>
+	<p class="mb-8">out on the veranda in Mexico.</p>
+
+	<p>The tequila may</p>
+	<p>have gotten the better of me,</p>
+	<p>but I\'ve thrown that all away now.</p>
+	<p class="mb-8">Constance, I\'m clean.</p>
+
+	<p>I\'ve never been to Michigan</p>
+	<p>but I\'ve heard it\'s cold</p>
+	<p>abd I\'m sure you cannot see</p>
+	<p class="mb-8">sunsets quite like these.</p>
+
+	<p>Constance, Arizona calls you home</p>
+	<p>and I can\'t help but plead with it.</p>
+	<p>With or without me,</p>
+	<p class="mb-8">these desert sights are worth your eyes.</p>
+	'
+)
 
 jane = Artist.create(
 	first: 'jane',
